@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./sections.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb388c3e99.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand heading-name" href="#">
+                    <img class="logoimage" src="./images/professional-portfolio.png" alt="logo-image.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#scrollspyAbout">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspySkills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyExperience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyEducation">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyContact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <button class="download_btn" type="submit" onclick="downloadPDF()">Download CV</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main_section">
+            <!-- =========================================Intro--------------------------------------- -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-1 order-md-0">
+                        <h5 id="salutation">Hello</h5>
+                        <h1><span>I'm</span> Kanchan Singh</h1>
+                        <h4 class="designation">Product Development Specialist..</h4>
+                        <p>I'm Creative Product Designer based in Jaipur, and I'm very passionate and dedicated to my work.</p>
+                        <ul class="list-group list-group-horizontal ps-0">
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="#scrollspyAbout" class="d2c_btn btn">About Me</a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="list-group-item border-0 bg-transparent">
+                                <a href="https://in.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 order-0 order-md-1">
+                        <div class="d2c_right_wrapper position-relative">
+                            <img src="./images/myimage.png" alt="DesignToCodes" class="floating-image">
+                            <img src="./images/Hero_2.png" alt="DesignToCodes">
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/Hero_bg.png" class="d2c_bg_img w-100" alt="DesignToCodes">
+            </div>
+            <!-- ----------------------------------------About Section------------------------------------- -->
+            <div class="d2c_bg_image_wrapper" id="scrollspyAbout">
+                <section class="d2c_about_wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-4 pb-4 pb-lg-0">
+                                <div class="d2c_card_wrapper">
+                                    <div class="row" id="scroll_to_about">
+                                        <div class="col-md-4"> <img src="./images/market.png" class="d2c_about_logo img-fluid" alt="DesignToCodes"> </div>
+                                        <div class="col-md-8">
+                                            <h5>Market Research</h5>
+                                            <p>I offer as a competitive analysis of the latest market trend.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 pb-4 pb-lg-0">
+                                <div class="d2c_card_wrapper">
+                                    <div class="row">
+                                        <div class="col-md-4"> <img src="./images/about_two.svg" class="d2c_about_logo" alt="DesignToCodes"> </div>
+                                        <div class="col-md-8">
+                                            <h5>High Quality</h5>
+                                            <p>Whether you need a new product, or enhance the existing product.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-4 offset-sm-3 offset-lg-0">
+                                <div class="d2c_card_wrapper">
+                                    <div class="row">
+                                        <div class="col-md-4"> <img src="./images/customer.png" class="d2c_about_logo" alt="DesignToCodes"> </div>
+                                        <div class="col-md-8">
+                                            <h5>Customer Needs</h5>
+                                            <p>I offer a customizable product as per the customer need.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center d2c_about_info">
+                            <div class="col-md">
+                                <h5>Let Me Introduce</h5>
+                                <h2>I'm your Product Development Specialist - Driving Innovation.</h2>
+                                <p>Innovation starts with product development. Armed with a MBA(Marketing) degree and 4 years of industry experience, I'm committed to creating groundbreaking products.</p><a href="#scrollspyContact" class="d2c_btn">Hire Me</a>
+                            </div>
+                            <div class="col-md">
+                                <div class="d2c_about_image_wrapper"> <img src="./images/aboutimage.jpg" alt="DesignToCodes">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- --------------------------------------------Skill Section------------------------------------------------- -->
+                <section class="d2c_skills_wrapper" id="scrollspySkills">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6"> <img src="./images/About_life.jpg" alt="DesignToCodes"> </div>
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <h5>Creation is Life</h5>
+                                <h2 class="d2c_skills_title">To stay current, I routinely gain new abilities.</h2>
+                                <p>I have a proven track record of delivering high-quality design solutions that meet my clients' needs and exceed their expectations.</p>
+                                <div class="d2c_progress">
+                                    <div class="d-flex justify-content-between">
+                                        <h3>Operations</h3>
+                                        <h3><span class="counter">90</span>%</h3>
+                                    </div>
+                                    <div class="progress clearfix" data-percent="90%">
+                                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h3>Problem Solving</h3>
+                                        <h3><span class="counter">95</span>%</h3>
+                                    </div>
+                                    <div class="progress clearfix" data-percent="95%">
+                                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <h3>Strong Communication</h3>
+                                        <h3><span class="counter">90</span>%</h3>
+                                    </div>
+                                    <div class="progress clearfix mb-0" data-percent="85%">
+                                        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ------------------------------------------------Experience----------------------------------------------- -->
+                <section class="experience" id="scrollspyExperience">
+                    <div>
+                        <h5 class="experience_heading text-center">Experience</h5>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                            <div class="col-12 card-col">
+                                <div class="card border-info mb-3">
+                                    <div class="card-header text-center">
+                                        <h5>Business Development Executive</h5>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">BYJUS</h4>
+                                        <p>Jan 2020-May 2020</p>
+                                        <p class="card-text">Drove substantial revenue growth by successfully selling educational technology solutions to schools and institutions through relationship building, engaging presentations, and exceptional customer support.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 card-col">
+                                <div class="card border-info mb-3">
+                                    <div class="card-header text-center">
+                                        <h5>Marketing Insights Analyst</h5>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">QLB Marketing Insights</h4>
+                                        <p>May 2020 -September 2020</p>
+                                        <p class="card-text">Conducted in-depth market research to identify trends and customer preferences, translating findings into actionable strategies to drive significant business growth and optimize marketing campaigns.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 card-col">
+                                <div class="card border-info mb-3">
+                                    <div class="card-header text-center ">
+                                        <h5>Operations Team Lead</h5>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Thrillophilia.com</h4>
+                                        <p>Mar 2021 – Aug 2023</p>
+                                        <p class="card-text">Led and managed end-to-end tour operations, from vendor management and contract negotiation to client relationship building and exceeding sales targets, ensuring exceptional customer experience and operational efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 card-col">
+                                <div class="card border-info mb-3">
+                                    <div class="card-header text-center">
+                                        <h5>Product Development Specialist</h5>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h4 class="card-title">Blueberry</h4>
+                                        <p>Mar 2021 – Aug 2023</p>
+                                        <p class="card-text">Conducted in-depth market research to develop and deliver innovative B2B travel products aligned with client needs, ensuring product quality and compliance while maintaining strong supplier relationships.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- -------------------------------------Education----------------------------------------------- -->
+                <section id="scrollspyEducation">
+                    <div>
+                        <h5 class="experience_heading text-center">Education</h5>
+                    </div>
+                    <div class="container">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Post-Graduation
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-success me-lg-4"><b>Field of Study : </b>MBA - Marketing</li>
+                                            <li class="list-group-item list-group-item-danger me-lg-4"><b>College : </b>RIIM, Pune</li>
+                                            <li class="list-group-item list-group-item-warning me-lg-4"><b>Location : </b>Maharashtra</li>
+                                            <li class="list-group-item list-group-item-info me-lg-4"><b>Duration : </b>May 2018 – May 2020 (2 Years)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        Graduation
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-success me-lg-4"><b>Field of Study : </b>B.Com (Travel &
+                                                Tourism)</li>
+                                            <li class="list-group-item list-group-item-danger me-lg-4"><b>College : </b>BSSS, Bhopal</li>
+                                            <li class="list-group-item list-group-item-warning me-lg-4"><b>Location : </b>Madhya Pradesh</li>
+                                            <li class="list-group-item list-group-item-info me-lg-4"><b>Duration : </b>May 2015 – June 2018 (3 Years)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ------------------------------------Contact-------------------------------------------- -->
+                <section class="d2c_contact_wrapper" id="scrollspyContact">
+                    <div class="container">
+                        <h2 class="d2c_contact_title">Send Us A Message</h2>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <form class="row">
+                                    <div class="col-md-12 col-lg-6"> <input type="text" class="form-control" placeholder="Enter your name" required=""> </div>
+                                    <div class="col-md-12 col-lg-6"> <input type="text" class="form-control" placeholder="Enter your email address" required=""> </div>
+                                    <div class="col-md-12"> <textarea class="w-100" placeholder="Write your message" rows="7"></textarea> </div>
+                                    <div class="col-md-12"> <button class="btn d2c_btn" type="submit">Send Message</button> </div>
+                                </form>
+                            </div>
+                        </div>
+                </section>
+            </div>
+    </main>
+    <!-- ===================================================================================================================================== -->
+    <footer>
+        <footer class="d2c_footer_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3>Thank you for visting!</h3>
+                        <p>If you also want a website like this for show casing your portfolio. Please connect us @ <a href="">gauravkrmodi@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+    <!-- <img scr="up.gif"id="scrollToTop" onclick="scrollToTop()">Scroll to Top</img> -->
+    <button id="scrollToTop" onclick="scrollToTop()"><img src="./images/up.gif" alt=""></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
